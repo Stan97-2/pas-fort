@@ -1,10 +1,10 @@
 <template>
   <div class="item">
     <div class="details">
-      <h3>
+      <div class="container"><h3>
         <slot name="heading"></slot>
       </h3>
-      <img src="@/assets/IMG_6594.jpg" width="125" height="125" />
+      <img src="@/assets/IMG_6594.jpg" width="125" height="125" /></div>
       <slot></slot>
     </div>
   </div>
@@ -35,6 +35,10 @@ h3 {
   color: var(--color-heading);
 }
 @media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
   img {
     border-radius: 50%
   }
