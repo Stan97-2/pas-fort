@@ -34,6 +34,10 @@ h3 {
   margin-bottom: 0.4rem;
   color: var(--color-heading);
 }
+img {
+    border-radius: 50%
+  }
+  
 @media (min-width: 1024px) {
   .container {
     display: flex;
