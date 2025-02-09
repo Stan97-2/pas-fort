@@ -29,19 +29,19 @@ h3 {
 }
 
 .greetings h1 {
-    text-align: justify
+    text-align: center
 }
 
 .greetings h3 {
-  text-align: left;
+  text-align: justify;
 }
 
 @media (min-width: 1024px) {
   .greetings h1 {
-    text-align: justify;
+    text-align: center;
   }
   .greetings h3 {
-    text-align: left;
+    text-align: justify;
   }
 }
 </style>

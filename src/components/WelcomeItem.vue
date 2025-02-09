@@ -33,7 +33,6 @@ h3 {
   font-weight: 500;
   margin-bottom: 0.4rem;
   color: var(--color-heading);
-  text-align: justify;
 }
 img {
     border-radius: 50%
