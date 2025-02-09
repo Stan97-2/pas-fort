@@ -11,7 +11,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 
 <template>
   <WelcomeItem>
-    <template #heading>1. Théo GIRIER</template>
+    <template #heading>1. Théo GIRIER (Leblanc9722)</template>
     Indiscutablement, le joueur dont le niveau est le plus décevant, Girier, ne cesse de perdre et d'entraîner ses coéquipiers dans sa chute lors des parties multijoueurs. Tout joueur devrait espérer avoir la chance de l'affronter, car une victoire semble assurée.
   </WelcomeItem>
 </template>
