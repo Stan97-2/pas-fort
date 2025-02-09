@@ -4,6 +4,7 @@
       <h3>
         <slot name="heading"></slot>
       </h3>
+      <img src="@/assets/IMG_6594.jpg" width="125" height="125" />
       <slot></slot>
     </div>
   </div>
