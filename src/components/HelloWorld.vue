@@ -10,6 +10,9 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
+    <h3>
+        Bienvenue dans le classement officiel des joueurs les moins forts, où l’on célèbre l’art de perdre avec style ! Découvrez les joueurs qui, malgré tous leurs efforts et un nombre d'heures incalculable, arrivent toujours à se retrouver en bas du tableau.
+    </h3>
   </div>
 </template>
 
