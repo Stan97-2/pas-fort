@@ -1,94 +1,77 @@
 <template>
-  <div class="ranking-container">
-    <h2 class="ranking-title">Classement</h2>
-    <ul class="ranking-list">
-      <li v-for="(player, index) in players" :key="player.id" class="ranking-item">
-        <span class="ranking-position">{{ index + 1 }}</span>
-        <img :src="player.photo" alt="photo" class="ranking-photo" />
-        <div class="ranking-info">
-          <p class="ranking-name">{{ player.name }}</p>
-          <p class="ranking-score">Score: {{ player.score }}</p>
-        </div>
-      </li>
-    </ul>
+  <div class="item">
+    <i>
+      <slot name="icon"></slot>
+    </i>
+    <div class="details">
+      <h3>
+        <slot name="heading"></slot>
+      </h3>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      players: [
-        {
-          id: 1,
-          name: "Joueur 1",
-          score: 100,
-          photo: "https://via.placeholder.com/40"
-        }
-      ]
-    };
-  }
-};
-</script>
-
 <style scoped>
-.ranking-container {
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.ranking-title {
-  text-align: center;
-  background: #333;
-  color: white;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.ranking-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.ranking-item {
+.item {
+  margin-top: 2rem;
   display: flex;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  position: relative;
 }
-
-.ranking-position {
-  font-size: 18px;
-  font-weight: bold;
-  width: 30px;
-  text-align: center;
-}
-
-.ranking-photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 10px;
-}
-
-.ranking-info {
+.details {
   flex: 1;
+  margin-left: 1rem;
 }
-
-.ranking-name {
-  font-weight: bold;
+i {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-text);
 }
-
-.ranking-score {
-  color: gray;
-  font-size: 14px;
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading);
+}
+@media (min-width: 1024px) {
+  .item {
+    margin-top: 0;
+    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+  }
+  i {
+    top: calc(50% - 25px);
+    left: -26px;
+    position: absolute;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+  }
+  .item:before {
+    content: ' ';
+    border-left: 1px solid var(--color-border);
+    position: absolute;
+    left: 0;
+    bottom: calc(50% + 25px);
+    height: calc(50% - 25px);
+  }
+  .item:after {
+    content: ' ';
+    border-left: 1px solid var(--color-border);
+    position: absolute;
+    left: 0;
+    top: calc(50% + 25px);
+    height: calc(50% - 25px);
+  }
+  .item:first-of-type:before {
+    display: none;
+  }
+  .item:last-of-type:after {
+    display: none;
+  }
 }
 </style>
