@@ -12,6 +12,6 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 <template>
   <WelcomeItem>
     <template #heading>1. Théo GIRIER (Leblanc9722)</template>
-    Indiscutablement, le joueur dont le niveau est le plus décevant, Girier, ne cesse de perdre et d'entraîner ses coéquipiers dans sa chute lors des parties multijoueurs. Tout joueur devrait espérer avoir la chance de l'affronter, car une victoire semble assurée.
+    Indiscutablement, Girier, plus connu sous le pseudo Leblanc9722, se distingue comme le joueur au niveau des plus décevants. Inlassablement, il multiplie les défaites et entraîne ses coéquipiers dans sa chute lors des parties multijoueurs. Tout joueur devrait rêver d’avoir la chance de l’affronter, car une victoire semble pratiquement garantie.
   </WelcomeItem>
 </template>
