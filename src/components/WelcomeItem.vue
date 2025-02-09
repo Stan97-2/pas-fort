@@ -19,6 +19,7 @@
 .details {
   flex: 1;
   margin-left: 1rem;
+  text-align: justify;
 }
 i {
   display: flex;
@@ -37,7 +38,7 @@ h3 {
 img {
     border-radius: 50%
   }
-  
+
 @media (min-width: 1024px) {
   .container {
     display: flex;
