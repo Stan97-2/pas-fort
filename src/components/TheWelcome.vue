@@ -11,12 +11,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 
 <template>
   <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
     <template #heading>1. Théo GIRIER</template>
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    Indiscutablement, le joueur dont le niveau est le plus décevant, Girier, ne cesse de perdre et d'entraîner ses coéquipiers dans sa chute lors des parties multijoueurs. Tout joueur devrait espérer avoir la chance de l'affronter, car une victoire semble assurée.
   </WelcomeItem>
 </template>
